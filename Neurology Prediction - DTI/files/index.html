@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="NeuroSense — animated neurological risk assessment prototype"/>
+  <title>NeuroSense Pro — Neurological Risk Assessment</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="ambient ambient-c"></div>
+
+  <div id="app">
+    <header id="hdr" style="display:none">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="neuro-dot pulse"></div>
+        <span class="mono brand-word">NeuroSense Pro</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div id="prog-dots" style="display:flex;gap:4px;align-items:center"></div>
+        <button id="themeToggle" class="icon-btn" type="button" title="Toggle theme">☾</button>
+      </div>
+    </header>
+    <div id="main"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="scoring.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
