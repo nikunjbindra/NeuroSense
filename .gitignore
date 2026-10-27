@@ -1,8 +1,57 @@
-.venv/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.obj
+*.o
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables & secrets
 .env
+.env.*
+!.env.example
+
+# Local SQLite databases & test user data (keep private!)
+*.db
+*.sqlite
+*.sqlite3
 users.db
-neurosense_model.pkl
+**/users.db
+
+# Generated reports & logs
+*.log
+*.pdf
+reports/*.pdf
+**/generated_reports/
+
+# Archives & temporary backup datasets
+*.zip
+*.tar.gz
 archive.zip
 archive/
+**/archive/
+**/archive.zip

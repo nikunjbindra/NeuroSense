@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
 
 # Virtual environments
 .venv/
@@ -11,14 +12,31 @@ env/
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Database & user records
+*.db
+*.sqlite
+*.sqlite3
+users.db
+
+# Reports & logs
+*.log
+*.pdf
+reports/
 
 # Archives and temporary files
 *.zip
 *.tar.gz
 *.tgz
-
-# Database files
-*.db
+archive/
+archive.zip
 
 # IDE files
 .vscode/
+.idea/
+
+# Environment files
+.env
+.env.*
+!.env.example
